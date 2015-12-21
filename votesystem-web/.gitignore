@@ -1,7 +1,6 @@
 /target/
 /catalina.home_IS_UNDEFINED/
-/vote.2015-12-10.log
-/vote.2015-12-13.log
+/*.log
 /vote-error.2015-12-08.log.zip
 /.externalToolBuilders/
 /.settings/
