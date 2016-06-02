@@ -1,8 +1,8 @@
-package com.vcyber.votesystem.dao;
+package com.ballot.dao;
 
 import java.util.List;
 
-import com.vcyber.votesystem.entity.USER;
+import com.ballot.entity.USER;
 
 public interface USERMapper {
     int deleteByPrimaryKey(Integer id);

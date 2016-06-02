@@ -1,6 +1,6 @@
-package com.vcyber.votesystem.dao;
+package com.ballot.dao;
 
-import com.vcyber.votesystem.entity.CANDIDATES;
+import com.ballot.entity.CANDIDATES;
 
 public interface CANDIDATESMapper {
     int deleteByPrimaryKey(Integer id);

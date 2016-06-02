@@ -1,4 +1,4 @@
-package com.vcyber.votesystem.controller;
+package com.ballot.controller;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.vcyber.votesystem.entity.USER;
-import com.vcyber.votesystem.entity.VOTER;
-import com.vcyber.votesystem.service.LoginService;
+import com.ballot.entity.USER;
+import com.ballot.entity.VOTER;
+import com.ballot.service.LoginService;
 
 
 @Controller

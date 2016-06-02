@@ -1,4 +1,4 @@
-package com.vcyber.votesystem.util;
+package com.ballot.util;
 
 /**
  * Hello world!

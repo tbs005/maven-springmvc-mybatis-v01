@@ -1,8 +1,8 @@
-package com.vcyber.votesystem.dao;
+package com.ballot.dao;
 
 import java.util.List;
 
-import com.vcyber.votesystem.entity.VOTE;
+import com.ballot.entity.VOTE;
 
 public interface VOTEMapper {
     int deleteByPrimaryKey(Integer voteId);

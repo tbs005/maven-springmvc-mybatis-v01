@@ -1,4 +1,4 @@
-package com.vcyber.votesystem.entity;
+package com.ballot.entity;
 
 import java.util.Date;
 

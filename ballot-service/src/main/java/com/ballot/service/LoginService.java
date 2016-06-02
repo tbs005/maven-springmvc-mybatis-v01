@@ -1,8 +1,8 @@
-package com.vcyber.votesystem.service;
+package com.ballot.service;
 
 import java.util.List;
 
-import com.vcyber.votesystem.entity.USER;
+import com.ballot.entity.USER;
 
 public interface LoginService {
 	

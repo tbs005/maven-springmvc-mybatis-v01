@@ -1,13 +1,13 @@
-package com.vcyber.votesystem.service.impl;
+package com.ballot.service.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.vcyber.votesystem.dao.USERMapper;
-import com.vcyber.votesystem.entity.USER;
-import com.vcyber.votesystem.service.LoginService;
+import com.ballot.dao.USERMapper;
+import com.ballot.entity.USER;
+import com.ballot.service.LoginService;
 
 @Service
 public class LoginServiceImpl implements LoginService {

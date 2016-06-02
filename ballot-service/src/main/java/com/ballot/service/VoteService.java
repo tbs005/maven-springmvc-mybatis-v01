@@ -1,14 +1,14 @@
-package com.vcyber.votesystem.service;
+package com.ballot.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.vcyber.votesystem.dao.USERMapper;
-import com.vcyber.votesystem.dao.VOTEMapper;
-import com.vcyber.votesystem.entity.USER;
-import com.vcyber.votesystem.entity.VOTE;
+import com.ballot.dao.USERMapper;
+import com.ballot.dao.VOTEMapper;
+import com.ballot.entity.USER;
+import com.ballot.entity.VOTE;
 
 @Service
 public class VoteService {
