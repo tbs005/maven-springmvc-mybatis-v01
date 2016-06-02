@@ -3,26 +3,26 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.vcyber.votesystem</groupId>
-	<artifactId>votesystem-parent</artifactId>
+	<groupId>com.ballot</groupId>
+	<artifactId>ballot-parent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>votesystem-parent</name>
+	<name>ballot-parent</name>
 	<url>http://maven.apache.org</url>
 
 	<modules>
-		<module>votesystem-web</module>
-		<module>votesystem-dao</module>
-		<module>votesystem-service</module>
-		<module>votesystem-util</module>
-		<module>votesystem-entity</module>
+		<module>ballot-web</module>
+		<module>ballot-dao</module>
+		<module>ballot-service</module>
+		<module>ballot-util</module>
+		<module>ballot-entity</module>
 	</modules>
 
 	<properties>
 		<!-- Jar version 定义 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.compiler.version>1.6</java.compiler.version>
+		<java.compiler.version>1.7</java.compiler.version>
 
 		<junit.version>4.11</junit.version>
 		<jetty.version>6.1.10</jetty.version>

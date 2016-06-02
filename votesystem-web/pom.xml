@@ -4,26 +4,26 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.vcyber.votesystem</groupId>
-		<artifactId>votesystem-parent</artifactId>
+		<groupId>com.ballot</groupId>
+		<artifactId>ballot-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>votesystem-web</artifactId>
+	<artifactId>ballot-web</artifactId>
 	<packaging>war</packaging>
-	<name>votesystem-web Maven Webapp</name>
+	<name>ballot-web Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<dependencies>
 
 		<dependency>
-			<groupId>com.vcyber.votesystem</groupId>
-			<artifactId>votesystem-service</artifactId>
+			<groupId>com.ballot</groupId>
+			<artifactId>ballot-service</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.vcyber.votesystem</groupId>
-			<artifactId>votesystem-util</artifactId>
+			<groupId>com.ballot</groupId>
+			<artifactId>ballot-util</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
@@ -92,7 +92,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>votesystem</finalName>
+		<finalName>ballot</finalName>
 		<plugins>
 			<!--配置Jetty插件 -->
 			<plugin>
