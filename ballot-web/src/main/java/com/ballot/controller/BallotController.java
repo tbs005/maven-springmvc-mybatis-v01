@@ -12,51 +12,51 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.ballot.entity.BALLOT;
 import com.ballot.entity.USER;
-import com.ballot.entity.VOTE;
-import com.ballot.service.VoteService;
+import com.ballot.service.BallotService;
 
 
 @Controller
-public class VoteController {
+public class BallotController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(VoteController.class);
+	private static final Logger logger = LoggerFactory.getLogger(BallotController.class);
 	
 	@Autowired
-	private VoteService voteService;
+	private BallotService ballotService;
 	
-	@RequestMapping(value = "/createvote", method = RequestMethod.POST) 
-	public ModelAndView createvote(HttpServletRequest request,VOTE vote){
-		logger.info("创建投票：{}",vote.getTitle());
+	@RequestMapping(value = "/createballot", method = RequestMethod.POST) 
+	public ModelAndView createballot(HttpServletRequest request,BALLOT ballot){
+		logger.info("创建投票：{}",ballot.getTitle());
 		
-		voteService.createVote(vote);
+		ballotService.createBallot(ballot);
 		
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("createvote");
+		mv.setViewName("createballot");
 		return mv;
 	}
 	
 	@RequestMapping(value = "/addCandidates", method = RequestMethod.GET) 
 	public ModelAndView addCandidates(){
 		logger.info("添加候选人：");
-		List<VOTE> votes = voteService.getAllVote();
-		List<USER> users = voteService.getAllUser();
+		List<BALLOT> ballots = ballotService.getAllBallot();
+		List<USER> users = ballotService.getAllUser();
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("addCandidates");
-		mv.addObject("votes", votes);
+		mv.addObject("ballots", ballots);
 		mv.addObject("users", users);
 		return mv;
 	}
 	
 	
-	@RequestMapping(value = "/addVoter", method = RequestMethod.GET) 
-	public ModelAndView addVoter(){
+	@RequestMapping(value = "/addBallotr", method = RequestMethod.GET) 
+	public ModelAndView addballotr(){
 		logger.info("添加投票人：");
-		List<VOTE> votes = voteService.getAllVote();
-		List<USER> users = voteService.getAllUser();
+		List<BALLOT> ballots = ballotService.getAllBallot();
+		List<USER> users = ballotService.getAllUser();
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("addVoter");
-		mv.addObject("votes", votes);
+		mv.setViewName("addballotr");
+		mv.addObject("ballots", ballots);
 		mv.addObject("users", users);
 		return mv;
 	}

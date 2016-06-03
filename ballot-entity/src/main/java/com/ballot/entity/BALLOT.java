@@ -2,7 +2,7 @@ package com.ballot.entity;
 
 import java.util.Date;
 
-public class VOTE {
+public class BALLOT {
     private Integer voteId;
 
     private String title;

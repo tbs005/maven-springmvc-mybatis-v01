@@ -2,20 +2,20 @@ package com.ballot.dao;
 
 import java.util.List;
 
-import com.ballot.entity.VOTE;
+import com.ballot.entity.BALLOT;
 
 public interface VOTEMapper {
     int deleteByPrimaryKey(Integer voteId);
 
-    int insert(VOTE record);
+    int insert(BALLOT record);
 
-    int insertSelective(VOTE record);
+    int insertSelective(BALLOT record);
 
-    VOTE selectByPrimaryKey(Integer voteId);
+    BALLOT selectByPrimaryKey(Integer voteId);
 
-    int updateByPrimaryKeySelective(VOTE record);
+    int updateByPrimaryKeySelective(BALLOT record);
 
-    int updateByPrimaryKey(VOTE record);
+    int updateByPrimaryKey(BALLOT record);
     
-    List<VOTE> findAllVote();
+    List<BALLOT> findAllVote();
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.vcyber.votesystem.dao.USERMapper">
-  <resultMap id="BaseResultMap" type="com.vcyber.votesystem.entity.USER">
+<mapper namespace="com.ballot.dao.USERMapper">
+  <resultMap id="BaseResultMap" type="com.ballot.entity.USER">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="password" jdbcType="VARCHAR" property="password" />
@@ -23,7 +23,7 @@
     delete from user
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.vcyber.votesystem.entity.USER">
+  <insert id="insert" parameterType="com.ballot.entity.USER">
     insert into user (id, name, password, 
       mail, create_time, update_time, 
       vote_num)
@@ -31,7 +31,7 @@
       #{mail,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, 
       #{voteNum,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.vcyber.votesystem.entity.USER">
+  <insert id="insertSelective" parameterType="com.ballot.entity.USER">
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -80,7 +80,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.vcyber.votesystem.entity.USER">
+  <update id="updateByPrimaryKeySelective" parameterType="com.ballot.entity.USER">
     update user
     <set>
       <if test="name != null">
@@ -104,7 +104,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.vcyber.votesystem.entity.USER">
+  <update id="updateByPrimaryKey" parameterType="com.ballot.entity.USER">
     update user
     set name = #{name,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},

@@ -8,28 +8,28 @@
 			<property name="suppressAllComments" value="true" />
 		</commentGenerator>
 		<!-- 数据库链接URL、用户名、密码 -->
-		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/votesys" userId="root" password=""> 
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/ballot" userId="root" password=""> 
 		</jdbcConnection>
 		<javaTypeResolver>
 			<property name="forceBigDecimals" value="false" />
 		</javaTypeResolver>
 		<!-- 生成模型的包名和位置 -->
-		<javaModelGenerator targetPackage="com.vcyber.votesystem.entity" targetProject="D:\CallCenter\votesystem-parent\votesystem-entity\src\main\java">
+		<javaModelGenerator targetPackage="com.ballot.entity" targetProject="D:\ballot-parent\ballot-entity\src\main\java">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 		<!-- 生成的映射文件包名和位置 -->
-		<sqlMapGenerator targetPackage="mapping" targetProject="D:\CallCenter\votesystem-parent\votesystem-dao\src\main\resources">
+		<sqlMapGenerator targetPackage="mapping" targetProject="D:\ballot-parent\ballot-dao\src\main\resources">
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 		<!-- 生成DAO的包名和位置 -->
-		<javaClientGenerator type="XMLMAPPER" targetPackage="com.vcyber.votesystem.dao" targetProject="D:\CallCenter\votesystem-parent\votesystem-dao\src\main\java">
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.ballot.dao" targetProject="D:\ballot-parent\ballot-dao\src\main\java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 		<!-- 要生成那些表(更改tableName和domainObjectName就可以) -->
 		<!-- 
 		<table tableName="user" domainObjectName="USER" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
-		<table tableName="vote" domainObjectName="VOTE" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+		<table tableName="ballot" domainObjectName="BALLOT" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
 		<table tableName="voter" domainObjectName="VOTER" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
 		<table tableName="candidates" domainObjectName="CANDIDATES" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
 		 -->

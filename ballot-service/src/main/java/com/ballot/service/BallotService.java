@@ -8,25 +8,25 @@ import org.springframework.stereotype.Service;
 import com.ballot.dao.USERMapper;
 import com.ballot.dao.VOTEMapper;
 import com.ballot.entity.USER;
-import com.ballot.entity.VOTE;
+import com.ballot.entity.BALLOT;
 
 @Service
-public class VoteService {
+public class BallotService {
 	
 	@Autowired
 	private VOTEMapper voteMapper;
 	@Autowired
 	private USERMapper userMapper;
 	
-	public void createVote(VOTE vote){
-		voteMapper.insert(vote);
+	public void createBallot(BALLOT ballot){
+		voteMapper.insert(ballot);
 	}
 	
 	public List<USER> getAllUser(){
 		return userMapper.findAllUser();
 	}
 	
-	public List<VOTE> getAllVote(){
+	public List<BALLOT> getAllBallot(){
 		return voteMapper.findAllVote();
 	}
 }
