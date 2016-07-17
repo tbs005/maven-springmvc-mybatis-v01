@@ -1,4 +1,4 @@
-package com.vcyber.votesystem.dao;
+package com.ballot.dao;
 
 import static org.junit.Assert.*;
 

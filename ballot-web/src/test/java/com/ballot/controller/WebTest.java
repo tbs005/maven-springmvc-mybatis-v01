@@ -1,4 +1,4 @@
-package com.vcyber.votesystem.controller;
+package com.ballot.controller;
 
 import static org.junit.Assert.*;
 

@@ -14,7 +14,7 @@ http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context-3.0.xsd  ">
 
 	<!-- 自动扫描service包下的所有类 -->
-	<context:component-scan base-package="com.vcyber.votesystem.service" />
+	<context:component-scan base-package="com.ballot.service" />
 
 	<!-- 注解方式配置事物 -->
 	<!-- <tx:annotation-driven transaction-manager="transactionManager" /> -->
@@ -55,7 +55,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd  ">
 	</tx:advice>
 	<aop:config>
 		<aop:pointcut id="transactionPointcut"
-			expression="execution(* com.vcyber.votesystem.service..*Impl.*(..))" />
+			expression="execution(* com.ballot.service..*Impl.*(..))" />
 		<aop:advisor pointcut-ref="transactionPointcut"
 			advice-ref="transactionAdvice" />
 	</aop:config>

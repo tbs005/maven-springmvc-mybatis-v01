@@ -1,4 +1,4 @@
-package com.vcyber.votesystem.util;
+package com.ballot.util;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

@@ -1,4 +1,4 @@
-package com.vcyber.votesystem.service.impl;
+package com.ballot.service.impl;
 
 import static org.junit.Assert.*;
 
