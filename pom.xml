@@ -22,16 +22,20 @@
 	<properties>
 		<!-- Jar version 定义 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.compiler.version>1.7</java.compiler.version>
+		<java.compiler.version>1.8</java.compiler.version>
+		
+		<springframework.version>4.3.1.RELEASE</springframework.version>
 
 		<junit.version>4.11</junit.version>
+		
 		<jetty.version>6.1.10</jetty.version>
 		<javax.servlet.version>3.0-alpha-1</javax.servlet.version>
-		<springframework.version>3.2.0.RELEASE</springframework.version>
+
 		<mybatis.version>3.1.1</mybatis.version>
 		<mybatis-spring.version>1.1.1</mybatis-spring.version>
 		<mysql.version>5.1.21</mysql.version>
 		<druid.version>0.2.9</druid.version>
+		
 		<jackson.version>1.9.11</jackson.version>
 		<commons-fileupload.version>1.2.2</commons-fileupload.version>
 
